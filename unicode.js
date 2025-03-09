@@ -1,4 +1,4 @@
-/*
+/*Initial Commit Bahar Lawter03/09/2025
 
 Practice Problem #1
 
@@ -86,20 +86,28 @@ Assign the result to a variable named swappedString.
 //Starter Code
 // Task 1
 let inputString1 = "Code";
-let firstCodePoint; // Your code here
-let thirdCodePoint; // Your code here
+let firstCodePoint=inputString1.charCodeAt(0); 
+let thirdCodePoint=intputString1.charCodeAt(2);
+
+
+
 
 // Task 2
-let wordFromCodePoints; // Your code here
+let wordFromCodePoints=String.fromCharCode(72,101,108,108);
+console.log(wordFromCodePoints);
+
+
 
 // Task 3
 let inputString2 = "Launch";
-let swappedString; // Your code here
+let swappedString;
+let firstCodePoint2=inputString2.charCodeAt(0);
+let lastCodePoint2=inputString2.charCodeAt(inputString2.length-1);
+
+let changingString=String.fromCharCode(lastCodePoint2)+inputString2.slice(1,-1)+String.fromCharCode(firstCodePoing2);
 
 // Log all results
-console.log({
-  firstCodePoint,
-  thirdCodePoint,
-  wordFromCodePoints,
-  swappedString,
-});
+console.log(firstCodePoint);
+console.log(thirdCodePoint);
+console.log(wordFromCodePoints);
+console.log(changingString);
